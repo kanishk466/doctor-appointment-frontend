@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <Router>
-      {token &&  <Navbar/> }
+      {token &&  (<Navbar/> )}
        
       <Routes> 
        
