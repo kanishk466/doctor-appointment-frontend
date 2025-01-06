@@ -26,22 +26,22 @@ const App = () => {
       <Routes> 
        
 
-       <Route path="/login" element={<Login/>}/>
-   
+     
+   {MultiRoute(  <Login/>, '/login', '/')}
+
 
        <Route path="/register" element={<Register/>}/>
+        
+       <Route path="/profile" element={
+       <ProtectedRoute>
+       <Profile/>
+         </ProtectedRoute>
+         }/>
+        
 
-   
-        {/* <Route
-          path="/profile"
-          element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>
-          }
-        /> */}
+  
+        
 
-{MultiRoute(  <ProtectedRoute><Profile /></ProtectedRoute>, '/profile', '/')}
 
 
 
