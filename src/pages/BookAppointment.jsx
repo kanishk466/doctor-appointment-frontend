@@ -2,9 +2,9 @@ import React,{useState,useEffect} from 'react'
 import { useNavigate } from "react-router";
 
 import axios from 'axios';
-const navigate = useNavigate();
-const BookAppointment = () => {
 
+const BookAppointment = () => {
+const navigate = useNavigate();
   const [doctors, setDoctors] = useState([]);
 
   const id =localStorage.getItem("_id");
